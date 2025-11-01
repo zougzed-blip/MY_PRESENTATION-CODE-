@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - Empowering the Nation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="Images/logo.jpg" alt="Empowering the Nation Logo">
+                <div class="logo-text">Empowering the Nation</div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="mobile-nav" id="mobileNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sixmonth.html">6-Month Courses</a></li>
+                    <li><a href="sixweeks.html">6-Week Courses</a></li>
+                    <li><a href="calculate.html">Get Quote</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Course Details Section -->
+    <section id="course-details">
+        <div class="container">
+            <div class="course-detail-content" id="course-content">
+                <!-- Course content will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Courses -->
+    <section id="related-courses">
+        <div class="container">
+            <h2 class="section-title">Other Courses You Might Like</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-content">
+                        <h3>First Aid</h3>
+                        <p>Provide first aid awareness and basic life support</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 6 months</span>
+                            <span><i class="fas fa-rand"></i> R1,500</span>
+                        </div>
+                        <a href="course-detail.html?course=firstaid" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-content">
+                        <h3>Cooking</h3>
+                        <p>Prepare and cook nutritious family meals</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 6 weeks</span>
+                            <span><i class="fas fa-rand"></i> R750</span>
+                        </div>
+                        <a href="course-detail.html?course=cooking" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-content">
+                        <h3>Landscaping</h3>
+                        <p>Provide landscaping services for new and established gardens</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 6 months</span>
+                            <span><i class="fas fa-rand"></i> R1,500</span>
+                        </div>
+                        <a href="course-detail.html?course=landscaping" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-hands-helping"></i>
+                        Empowering the Nation
+                    </div>
+                    <p>Upskilling domestic workers and gardeners to build better futures for themselves and their communities.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sixmonth.html">6-Month Courses</a></li>
+                        <li><a href="sixweeks.html">6-Week Courses</a></li>
+                        <li><a href="calculate.html">Get Quote</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="course-detail.html?course=firstaid">First Aid</a></li>
+                        <li><a href="course-detail.html?course=sewing">Sewing</a></li>
+                        <li><a href="course-detail.html?course=landscaping">Landscaping</a></li>
+                        <li><a href="course-detail.html?course=lifeskills">Life Skills</a></li>
+                        <li><a href="course-detail.html?course=childminding">Child Minding</a></li>
+                        <li><a href="course-detail.html?course=cooking">Cooking</a></li>
+                        <li><a href="course-detail.html?course=gardenmaintenance">Garden Maintenance</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Course data with exact content from your documents
+        const courses = {
+            firstaid: {
+                title: "First Aid",
+                duration: "6 months",
+                price: "R1,500",
+                description: "To provide first aid awareness and basic life support",
+                details: `
+                    <div class="course-detail-header">
+                        <div class="course-detail-info">
+                            <h1>First Aid</h1>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 6 months</span>
+                                <span><i class="fas fa-rand"></i> R1,500</span>
+                            </div>
+                            <p><strong>Purpose:</strong> To provide first aid awareness and basic life support</p>
+                            <div class="course-actions">
+                                <a href="calculate.html" class="btn">Enroll Now</a>
+                                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-detail-content">
+                        <div class="course-modules">
+                            <h2>Course Content</h2>
+                            <ul>
+                                <li>Wounds and bleeding</li>
+                                <li>Burns and fractures</li>
+                                <li>Emergency scene management</li>
+                                <li>Cardio-Pulmonary Resuscitation (CPR)</li>
+                                <li>Respiratory distress e.g., Choking, blocked airway</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="course-outcomes">
+                            <h2>What You'll Learn</h2>
+                            <ul>
+                                <li>Handle emergency situations confidently</li>
+                                <li>Provide basic life support</li>
+                                <li>Manage wounds, burns, and fractures</li>
+                                <li>Perform CPR correctly</li>
+                                <li>Respond to respiratory emergencies</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            sewing: {
+                title: "Sewing",
+                duration: "6 months",
+                price: "R1,500",
+                description: "To provide alterations and new garment tailoring services",
+                details: `
+                    <div class="course-detail-header">
+                        <div class="course-detail-info">
+                            <h1>Sewing</h1>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 6 months</span>
+                                <span><i class="fas fa-rand"></i> R1,500</span>
+                            </div>
+                            <p><strong>Purpose:</strong> To provide alterations and new garment tailoring services</p>
+                            <div class="course-actions">
+                                <a href="calculate.html" class="btn">Enroll Now</a>
+                                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-detail-content">
+                        <div class="course-modules">
+                            <h2>Course Content</h2>
+                            <ul>
+                                <li>Types of stitches</li>
+                                <li>Threading a sewing machine</li>
+                                <li>Sewing buttons, zips, hems and seams</li>
+                                <li>Alterations</li>
+                                <li>Designing and sewing new garments</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="course-outcomes">
+                            <h2>What You'll Learn</h2>
+                            <ul>
+                                <li>Master different types of stitches</li>
+                                <li>Operate and maintain sewing machines</li>
+                                <li>Perform professional alterations</li>
+                                <li>Sew buttons, zips, hems and seams</li>
+                                <li>Design and create new garments from scratch</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            landscaping: {
+                title: "Landscaping",
+                duration: "6 months",
+                price: "R1,500",
+                description: "To provide landscaping services for new and established gardens",
+                details: `
+                    <div class="course-detail-header">
+                        <div class="course-detail-info">
+                            <h1>Landscaping</h1>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 6 months</span>
+                                <span><i class="fas fa-rand"></i> R1,500</span>
+                            </div>
+                            <p><strong>Purpose:</strong> To provide landscaping services for new and established gardens</p>
+                            <div class="course-actions">
+                                <a href="calculate.html" class="btn">Enroll Now</a>
+                                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-detail-content">
+                        <div class="course-modules">
+                            <h2>Course Content</h2>
+                            <ul>
+                                <li>Indigenous and exotic plants and trees</li>
+                                <li>Fixed structures (fountains, statues, benches, tables, built-in braai)</li>
+                                <li>Balancing of plants and trees in a garden</li>
+                                <li>Identification of plant shapes and colours</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="course-outcomes">
+                            <h2>What You'll Learn</h2>
+                            <ul>
+                                <li>Identify and work with indigenous and exotic plants</li>
+                                <li>Install and maintain garden structures</li>
+                                <li>Create balanced and aesthetically pleasing garden designs</li>
+                                <li>Recognize different plant shapes and colors</li>
+                                <li>Design complete landscaping solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            lifeskills: {
+                title: "Life Skills",
+                duration: "6 months",
+                price: "R1,500",
+                description: "To provide skills to navigate basic life necessities",
+                details: `
+                    <div class="course-detail-header">
+                        <div class="course-detail-info">
+                            <h1>Life Skills</h1>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 6 months</span>
+                                <span><i class="fas fa-rand"></i> R1,500</span>
+                            </div>
+                            <p><strong>Purpose:</strong> To provide skills to navigate basic life necessities</p>
+                            <div class="course-actions">
+                                <a href="calculate.html" class="btn">Enroll Now</a>
+                                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-detail-content">
+                        <div class="course-modules">
+                            <h2>Course Content</h2>
+                            <ul>
+                                <li>Opening a bank account</li>
+                                <li>Basic labour law (know your rights)</li>
+                                <li>Basic reading and writing literacy</li>
+                                <li>Basic numeric literacy</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="course-outcomes">
+                            <h2>What You'll Learn</h2>
+                            <ul>
+                                <li>Manage personal finances and banking</li>
+                                <li>Understand your rights as an employee</li>
+                                <li>Improve reading and writing skills</li>
+                                <li>Develop basic math skills for daily life</li>
+                                <li>Navigate essential life situations confidently</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            childminding: {
+                title: "Child Minding",
+                duration: "6 weeks",
+                price: "R750",
+                description: "To provide basic child and baby care",
+                details: `
+                    <div class="course-detail-header">
+                        <div class="course-detail-info">
+                            <h1>Child Minding</h1>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 6 weeks</span>
+                                <span><i class="fas fa-rand"></i> R750</span>
+                            </div>
+                            <p><strong>Purpose:</strong> To provide basic child and baby care</p>
+                            <div class="course-actions">
+                                <a href="calculate.html" class="btn">Enroll Now</a>
+                                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-detail-content">
+                        <div class="course-modules">
+                            <h2>Course Content</h2>
+                            <ul>
+                                <li>Birth to six-month old baby needs</li>
+                                <li>Seven-month to one year old needs</li>
+                                <li>Toddler needs</li>
+                                <li>Educational toys</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="course-outcomes">
+                            <h2>What You'll Learn</h2>
+                            <ul>
+                                <li>Care for newborns and infants (0-6 months)</li>
+                                <li>Meet the needs of older babies (7-12 months)</li>
+                                <li>Understand and support toddler development</li>
+                                <li>Select and use appropriate educational toys</li>
+                                <li>Provide safe and nurturing child care</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            cooking: {
+                title: "Cooking",
+                duration: "6 weeks",
+                price: "R750",
+                description: "To prepare and cook nutritious family meals",
+                details: `
+                    <div class="course-detail-header">
+                        <div class="course-detail-info">
+                            <h1>Cooking</h1>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 6 weeks</span>
+                                <span><i class="fas fa-rand"></i> R750</span>
+                            </div>
+                            <p><strong>Purpose:</strong> To prepare and cook nutritious family meals</p>
+                            <div class="course-actions">
+                                <a href="calculate.html" class="btn">Enroll Now</a>
+                                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-detail-content">
+                        <div class="course-modules">
+                            <h2>Course Content</h2>
+                            <ul>
+                                <li>Nutritional requirements for a healthy body</li>
+                                <li>Types of protein, carbohydrates and vegetables</li>
+                                <li>Planning meals</li>
+                                <li>Preparation and cooking of meals</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="course-outcomes">
+                            <h2>What You'll Learn</h2>
+                            <ul>
+                                <li>Understand nutritional needs for health</li>
+                                <li>Work with different food groups effectively</li>
+                                <li>Plan balanced and nutritious meals</li>
+                                <li>Master food preparation and cooking techniques</li>
+                                <li>Create delicious and healthy family meals</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            gardenmaintenance: {
+                title: "Garden Maintenance",
+                duration: "6 weeks",
+                price: "R750",
+                description: "To provide basic knowledge of watering, pruning and planting in a domestic garden",
+                details: `
+                    <div class="course-detail-header">
+                        <div class="course-detail-info">
+                            <h1>Garden Maintenance</h1>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 6 weeks</span>
+                                <span><i class="fas fa-rand"></i> R750</span>
+                            </div>
+                            <p><strong>Purpose:</strong> To provide basic knowledge of watering, pruning and planting in a domestic garden</p>
+                            <div class="course-actions">
+                                <a href="calculate.html" class="btn">Enroll Now</a>
+                                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-detail-content">
+                        <div class="course-modules">
+                            <h2>Course Content</h2>
+                            <ul>
+                                <li>Water restrictions and the watering requirements of indigenous and exotic plants</li>
+                                <li>Pruning and propagation of plants</li>
+                                <li>Planting techniques for different plant types</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="course-outcomes">
+                            <h2>What You'll Learn</h2>
+                            <ul>
+                                <li>Manage water usage according to restrictions</li>
+                                <li>Understand different plant watering needs</li>
+                                <li>Master pruning techniques for plant health</li>
+                                <li>Learn plant propagation methods</li>
+                                <li>Apply proper planting techniques for various plants</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+  
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const courseId = urlParams.get('course');
+            
+            const courseContent = document.getElementById('course-content');
+            
+            if (courseId && courses[courseId]) {
+                courseContent.innerHTML = courses[courseId].details;
+                document.title = `${courses[courseId].title} - Empowering the Nation`;
+            } else {
+                courseContent.innerHTML = `
+                    <div class="course-not-found">
+                        <h1>Course Not Found</h1>
+                        <p>The course you're looking for doesn't exist or has been moved.</p>
+                        <a href="index.html" class="btn">Return to Home</a>
+                    </div>
+                `;
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Empowering the Nation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="Images/logo.jpg" alt="Empowering the Nation Logo">
+                <div class="logo-text">Empowering the Nation</div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="mobile-nav" id="mobileNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sixmonth.html">6-Month Courses</a></li>
+                    <li><a href="sixweeks.html">6-Week Courses</a></li>
+                    <li><a href="calculate.html">Get Quote</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team for more information</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Empowerment Street, Johannesburg, South Africa</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <span>+27 11 123 4567</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@empoweringthenation.org.za</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-clock"></i>
+                        <span>Monday - Friday: 8:00 AM - 5:00 PM</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="course-interest">Course Interest</label>
+                            <select id="course-interest">
+                                <option value="">Select a course</option>
+                                <option value="firstaid">First Aid</option>
+                                <option value="sewing">Sewing</option>
+                                <option value="landscaping">Landscaping</option>
+                                <option value="lifeskills">Life Skills</option>
+                                <option value="childminding">Child Minding</option>
+                                <option value="cooking">Cooking</option>
+                                <option value="gardenmaintenance">Garden Maintenance</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-hands-helping"></i>
+                        Empowering the Nation
+                    </div>
+                    <p>Upskilling domestic workers and gardeners to build better futures for themselves and their communities.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sixmonth.html">6-Month Courses</a></li>
+                        <li><a href="sixweeks.html">6-Week Courses</a></li>
+                        <li><a href="calculate.html">Get Quote</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="course-detail.html?course=firstaid">First Aid</a></li>
+                        <li><a href="course-detail.html?course=sewing">Sewing</a></li>
+                        <li><a href="course-detail.html?course=landscaping">Landscaping</a></li>
+                        <li><a href="course-detail.html?course=lifeskills">Life Skills</a></li>
+                        <li><a href="course-detail.html?course=childminding">Child Minding</a></li>
+                        <li><a href="course-detail.html?course=cooking">Cooking</a></li>
+                        <li><a href="course-detail.html?course=gardenmaintenance">Garden Maintenance</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

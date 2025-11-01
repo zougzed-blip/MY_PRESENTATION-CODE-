@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Quote - Empowering the Nation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="Images/logo.jpg" alt="Empowering the Nation Logo">
+                <div class="logo-text">Empowering the Nation</div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="mobile-nav" id="mobileNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sixmonth.html">6-Month Courses</a></li>
+                    <li><a href="sixweeks.html">6-Week Courses</a></li>
+                    <li><a href="calculate.html">Get Quote</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get an Instant Quote</h1>
+            <p>Select your courses and see discounted pricing</p>
+        </div>
+    </section>
+
+    <!-- Quote Calculator -->
+    <section id="quote">
+        <div class="container">
+            <div class="quote-calculator">
+                <div class="calculator-grid">
+                    <div class="course-selector">
+                        <h3>Select 6-Month Courses (R1500 each)</h3>
+                        <div class="course-checkbox">
+                            <input type="checkbox" id="firstaid" data-price="1500">
+                            <label for="firstaid">First Aid - R1,500</label>
+                        </div>
+                        
+                        <div class="course-checkbox">
+                            <input type="checkbox" id="sewing" data-price="1500">
+                            <label for="sewing">Sewing - R1,500</label>
+                        </div>
+                        
+                        <div class="course-checkbox">
+                            <input type="checkbox" id="landscaping" data-price="1500">
+                            <label for="landscaping">Landscaping - R1,500</label>
+                        </div>
+                        
+                        <div class="course-checkbox">
+                            <input type="checkbox" id="lifeskills" data-price="1500">
+                            <label for="lifeskills">Life Skills - R1,500</label>
+                        </div>
+
+                        <h3 style="margin-top: 2rem;">Select 6-Week Courses (R750 each)</h3>
+                        <div class="course-checkbox">
+                            <input type="checkbox" id="childminding" data-price="750">
+                            <label for="childminding">Child Minding - R750</label>
+                        </div>
+                        
+                        <div class="course-checkbox">
+                            <input type="checkbox" id="cooking" data-price="750">
+                            <label for="cooking">Cooking - R750</label>
+                        </div>
+                        
+                        <div class="course-checkbox">
+                            <input type="checkbox" id="gardenmaintenance" data-price="750">
+                            <label for="gardenmaintenance">Garden Maintenance - R750</label>
+                        </div>
+                    </div>
+                    
+                    <div class="quote-summary">
+                        <h3>Your Quote Summary</h3>
+                        <div class="quote-details">
+                            <div class="quote-line">
+                                <span>Selected Courses:</span>
+                                <span id="selected-courses">0</span>
+                            </div>
+                            <div class="quote-line">
+                                <span>Subtotal:</span>
+                                <span id="subtotal">R0.00</span>
+                            </div>
+                            <div class="quote-line">
+                                <span>Discount:</span>
+                                <span id="discount">0% (R0.00)</span>
+                            </div>
+                            <div class="quote-total">
+                                <span>Total:</span>
+                                <span id="total">R0.00</span>
+                            </div>
+                        </div>
+                        <p class="discount-info">Discounts: 2 courses (5%), 3 courses (10%), 4+ courses (15%)</p>
+                        <a href="contact.html" class="btn" style="width: 100%; text-align: center; margin-top: 1rem;">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-hands-helping"></i>
+                        Empowering the Nation
+                    </div>
+                    <p>Upskilling domestic workers and gardeners to build better futures for themselves and their communities.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sixmonth.html">6-Month Courses</a></li>
+                        <li><a href="sixweeks.html">6-Week Courses</a></li>
+                        <li><a href="calculate.html">Get Quote</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="course-detail.html?course=firstaid">First Aid</a></li>
+                        <li><a href="course-detail.html?course=sewing">Sewing</a></li>
+                        <li><a href="course-detail.html?course=landscaping">Landscaping</a></li>
+                        <li><a href="course-detail.html?course=lifeskills">Life Skills</a></li>
+                        <li><a href="course-detail.html?course=childminding">Child Minding</a></li>
+                        <li><a href="course-detail.html?course=cooking">Cooking</a></li>
+                        <li><a href="course-detail.html?course=gardenmaintenance">Garden Maintenance</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
